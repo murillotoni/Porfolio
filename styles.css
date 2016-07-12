@@ -1,0 +1,141 @@
+html, body {
+	font-family: "Lucida Console",monospace;
+	font-size: 100%;
+	width: 1024px;
+}
+
+h1{
+	color: #339966;
+	font-size: 4em
+	color: #339966;
+	position: center;
+	text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+	color: #006666;
+    font-size: 1.875em;
+    text-align: center;
+}
+
+p {
+    font-size: 0.875em;
+}
+
+
+#header {
+	position: fixed;
+	padding-top: 10px;
+	width: 1024px;
+	height: 100px;
+	float:left;
+	background-color: #ffffff; 
+	top: 0px;
+}
+
+#logo {
+	width: 50px;
+	height: 50px;
+	float:left;
+	top: 10px;
+}
+
+#logo img {
+	width: 50px;
+	height: 50px;
+	float:left;
+	top: 20px;
+}
+
+#banda {
+	width: 100%;
+	float: left;
+}
+
+#banda img {
+	width: 100%;
+	float: left;
+}
+
+#navigation ul {
+	width: 30%;
+	float: right;
+}
+ul {
+    list-style-type: none;
+	margin-top: 12px;
+    padding: 10px;
+    float:right;
+}
+
+li {
+    float:left;
+}
+
+a {
+	color: #006666;
+    display: block;
+    padding: 8px;
+}
+
+li a:hover {
+   color:#ff471a;
+}
+
+
+#general {
+	width: 1024px;
+	height: auto;
+	float: left;
+}
+
+#portada {
+	width: 1024px;
+	height: auto;
+	float: left;
+}
+
+#portada img {
+	width: 100%;	
+	height: auto;
+	float: left;
+}
+
+#texto {
+	width: 1024px;
+	height: auto;
+	float: left;
+	position: center;
+	text-align: center;
+
+}
+
+.column { /* tenías #column y debe ser .column porque es el selector es una clase y no un ID, por so no se te aplicaban los estilos */
+	width: 300px;
+	height: auto;
+	float: left;
+	margin:20px; /* lo he cambiado a 20 porque recuerda que el margen en este caso se aplica de cada lado, por tanto esta colum medirá: 300 + 62 + 62 = 424
+	                y si tienes tres columnas iguales: 424 * 3 = 1272 y no te caben porque el contenedor que es el div id = "text" mide 1024 */
+}
+
+.column img { /* he agregado este estilo aplicado a la imagen de dentro de la columna porque tus imágenes son enormes y si no les dices el tamaño
+               en que queires que se muestren, se mostrarán en su tamaño original*/
+    width: 100%;
+}
+
+#footer {
+	width: 100%;
+	height: 200px;
+	float: left;
+}
+
+#footer img {
+	width: 100%;
+	float:left;
+	top: 20px;
+	opacity: 50%;
+}
