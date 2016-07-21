@@ -1,0 +1,528 @@
+/* GENÉRICOS */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.icon-rrssfacebook2:before {
+    content: "\e900";
+    font-family: "rrss";
+    font-size: 2em;
+}
+
+.icon-rrssinstagram:before {
+    content: "\e902";
+    font-family: "rrss";
+    font-size: 2em;
+}
+
+.icon-rrsstwitter:before {
+    content: "\e903";
+    font-family: "rrss";
+    font-size: 2em;
+}
+
+
+a:hover {
+   text-decoration: none;
+}
+
+.padding-0{
+  padding: 0;
+}
+
+/* Linea bajo nombre*/
+hr {
+  border-color: transparent;
+  border-width: 3px;
+  max-width: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.btn-default {
+  color: #222222;
+  background-color: white;
+  border-color: white;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+
+
+
+/* BARRA DE NAVEGACION */
+
+
+/* Pepito Perez de arriba izqda*/
+.navbar-default .navbar-header .navbar-brand {
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.875em;
+  text-transform: uppercase;
+}
+
+/* Menu*/
+.navbar-default .navbar-header .navbar-toggle {
+  font-weight: 700;
+  font-size: 0.875em;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/* Navbar mobile*/
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875em;
+  color: #000000;
+}
+
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus:hover {
+  color: #000000;
+}
+.navbar-default .nav > li.active > a,
+.navbar-default .nav > li.active > a:focus {
+  color: #000000;
+  background-color: transparent;
+}
+.navbar-default .nav > li.active > a:hover,
+.navbar-default .nav > li.active > a:focus:hover {
+  background-color: transparent;
+}
+
+/* Navbar mediaqueries tamaños medianos*/
+
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color: white;
+  }
+
+  /* Pepito Pérez color default*/
+  .navbar-default .navbar-header .navbar-brand {
+    color: #000000;
+  }
+  /* Pepito Pérez color hover*/
+  .navbar-default .navbar-header .navbar-brand:hover,
+  .navbar-default .navbar-header .navbar-brand:focus {
+    color: #ffffff;
+  }
+
+    /* Navbar color default*/
+  .navbar-default .nav > li > a,
+  .navbar-default .nav > li > a:focus {
+    color: #000000;
+  }
+
+    /* Navbar color hover*/
+  .navbar-default .nav > li > a:hover,
+  .navbar-default .nav > li > a:focus:hover {
+    color: #ffffff;
+  }
+}
+
+
+/* Navbar mediaqueries tamaños grandes*/
+
+@media (min-width: 992px) {
+  .navbar-default {
+    background-color: transparent;
+  }
+
+  /* Pepito Pérez color default*/
+  .navbar-default .navbar-header .navbar-brand {
+    color: #000000;
+  }
+  /* Pepito Pérez color hover*/
+  .navbar-default .navbar-header .navbar-brand:hover,
+  .navbar-default .navbar-header .navbar-brand:focus {
+    color: #ffffff;
+  }
+
+    /* Navbar color default*/
+  .navbar-default .nav > li > a,
+  .navbar-default .nav > li > a:focus {
+    color: #000000;
+  }
+
+    /* Navbar color hover*/
+  .navbar-default .nav > li > a:hover,
+  .navbar-default .nav > li > a:focus:hover {
+    color: #ffffff;
+  }
+}
+
+
+
+/* DIV NOMBRE Y POSICION */
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/design01.jpg');
+  text-align: center;
+  color: #000000;
+}
+
+/* Texto de nombre y profesión posición*/
+header .header-content {
+  position: relative;
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+}
+
+/* Texto de nombre */
+header .header-content .header-content-inner h1 {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4em;
+  text-transform: uppercase;
+  color: #FFC946;
+}
+
+/* Texto de profesión */
+#pro{
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4em;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFC946;
+}
+
+/* Nombre y profesion en mediaqueries*/
+@media (min-width: 768px) {
+  header {
+    min-height: 100%;
+  }
+  header .header-content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 50px;
+  }
+  header .header-content .header-content-inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .header-content .header-content-inner h1 {
+    font-size: 50px;
+  }
+  header .header-content .header-content-inner p {
+    font-size: 1.125em;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+/* VALORES */
+
+/* Fondo para mobile */
+.ctm-bg{
+  background-color: #F00000;
+}
+
+
+#declaracion{
+  padding-top:15px;
+  padding-bottom:15px;
+  text-align: center;
+  font-size: 4em; 
+  font-weight: 600;
+  color: #FFC946;
+}
+
+
+/* Fondo para tamaños nedianos */
+@media (min-width: 768px){
+.ctm-bg{
+  background-color: #000000;
+}
+}
+
+/* Fondo para tamaños grandes */
+
+@media (min-width: 1200px){
+
+  #declaracion{
+    padding-top:60px;
+    padding-bottom:60px;
+    padding-left: 50px;
+    font-size: 5em; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #F00003;
+  }
+
+  .ctm-bg{
+    background-color: #004785;
+  }
+}
+
+/* MÉTODO */
+/* mobile */
+
+
+/* ESTE TEXTO DE COMO LO HAGO NO SE CENTRA o soy yo!??! */
+
+h3{
+  text-align: center;
+  font-size: 3em; 
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  color: #00000;
+  font-weight: 600;
+  padding-left: 50px;
+}
+
+#metodo p{
+  font-size: 2em; 
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+.como-carousel{
+  height: 260px;
+}
+
+
+/* media queries Carrusel */
+
+@media (min-width: 400px){
+  .como-carousel{
+    height: 274px;
+  }
+}
+@media (min-width: 420px){
+  .como-carousel{
+    height: 300px;
+  }
+}
+@media (min-width: 460px){
+  .como-carousel{
+    height: 317px;
+  }
+}
+@media (min-width: 500px){
+  .como-carousel{
+    height: 343px;
+  }
+}
+@media (min-width: 530px){
+  .como-carousel{
+    height: 363px;
+  }
+}
+@media (min-width: 560px){
+  .como-carousel{
+    height: 383px;
+  }
+}
+@media (min-width: 580px){
+  .como-carousel{
+    height: 397px;
+  }
+}
+@media (min-width: 610px){
+  .como-carousel{
+    height: 417px;
+  }
+}
+@media (min-width: 640px){
+  .como-carousel{
+    height: 437px;
+  }
+}
+
+
+@media (min-width: 1200px){
+
+  .como-carousel{
+    height: 558px;
+  }
+
+  h3{
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 4em; 
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: bold;
+  }
+}
+
+
+
+
+/* PROYECTOS */
+
+#trabajos {
+  position: relative;
+  padding-top: 50px; 
+  padding-bottom: 50px; 
+  width: 100%;
+  text-align: center;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-color: 426577;
+
+}
+
+
+#trabajos h3{
+  padding-top: 50px; 
+}
+
+
+/* Fondo para tamaños nedianos */
+@media (min-width: 768px){
+#trabajos h3{
+  padding-top: 100px; 
+}
+}
+
+
+/* DIV CONTACTO */
+
+/* A ESTE CONTACTO LE PASA ALGO */
+
+.contacto  {
+  position: relative; 
+  width: 100%;
+  text-align: left;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../img/contact.jpeg');
+}
+
+
+/* Párrafo contacto*/
+.contacto p {
+  color:#000000;
+  font-weight: 300;
+  text-transform: uppercase; 
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+/* Botones contacto*/
+.contacto a {
+    margin-bottom: 30px;
+}
+
+
+/* Contacto mediaqueries grandes*/
+
+@media (min-width: 768px) {
+.contacto  {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: auto;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../img/contact.jpeg');
+}
+
+
+.contacto p {
+  color:#ffffff;
+  font-weight: 300;
+  font-size: 2em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+}
+
+/* DIV FOOTER */
+
+#footer {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  min-height:100px; 
+  background-color: #ff567f;
+}
+
+.footer {
+    list-style-type: none;
+    margin-top: 5px;
+    padding: 10px;
+    text-align:center;
+    color:#000000;
+}
+
+li {
+  float:center;
+}
+
+a {
+  color: #000000;
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+}
+
+li a:hover {
+   color:#ffffff;
+   text-decoration: none;
+}
+
+/* Footer mediaqueries tamaños grandes*/
+
+@media (min-width: 768px) {
+#footer {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  min-height:100px; 
+  background-color: #ffffff;
+}
+a {
+  color: #f53972;
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+}
+
+li a:hover {
+   color:#000000;
+   text-decoration: none;
+}
+
+
+
